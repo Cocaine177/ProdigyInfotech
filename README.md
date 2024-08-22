@@ -1,3 +1,72 @@
+# Password Strength Checker
+
+This Python script helps assess the strength of a password by checking the following criteria:
+- Length of the password (between 8 and 20 characters)
+- Inclusion of at least one uppercase letter
+- Inclusion of at least one lowercase letter
+- Inclusion of at least one number
+- Inclusion of at least one special character
+
+The script provides feedback on each of these criteria and gives an overall assessment of the password's strength.
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example](#example)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+- Validates if the password is within the acceptable length.
+- Checks for the presence of uppercase letters, lowercase letters, numbers, and special characters.
+- Provides clear feedback on each aspect of the password.
+- Offers an overall assessment of the password's strength.
+
+## Installation
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/yourusername/password-strength-assessor.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd password-strength-assessor
+   ```
+
+## Usage
+To use the password strength assessor, simply run the script and enter a password when prompted:
+
+```bash
+python password_strength_assessor.py
+```
+
+You will receive feedback on the strength of your password based on the criteria outlined.
+
+## Example
+Here's an example of how the script works:
+
+```bash
+Enter a password to assess: My$ecur3P@ssw0rd
+
+Length of password: 15
+Password length is nice.
+Password contains uppercase letters.
+Password contains lowercase letters.
+Password contains numbers.
+Password contains special characters.
+Password is strong.
+```
+
+## Contributing
+If you'd like to contribute to this project, please fork the repository and submit a pull request. We welcome improvements and new features!
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to customize the sections as needed, such as replacing `"yourusername"` with your actual GitHub username or adding more detailed instructions.
+
 ## TASK 5 : Network Packet Analyzer
 
 Overview
@@ -76,7 +145,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 - Thanks to Prodigy Infotech for the opportunity to work on this project.
 - Gratitude to the open-source community for providing the tools and libraries that made this project possible.
-
----
-
-This template should cover all the essential details, including installation, usage, and contribution guidelines, making it easy for others to understand and contribute to your project.
+ 
