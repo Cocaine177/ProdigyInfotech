@@ -1,0 +1,40 @@
+import re
+
+def assess_password_strength(password):    
+    MIN_LENGTH = 8
+    MAX_LENGTH = 20
+    
+    length = len(password)
+    print(f"Length of password: {length}")
+    if length < MIN_LENGTH:
+        length_feedback = f"Password is too short. It should be at least {MIN_LENGTH} characters long."
+    elif length > MAX_LENGTH:
+        length_feedback = f"Password is too long. It should be no more than {MAX_LENGTH} characters long."
+    else:
+        length_feedback = "Password length is nice."
+    print(length_feedback)
+
+    has_uppercase = re.search(r'[A-Z]', password)
+    uppercase_feedback = "Password should contain at least one uppercase letter." if not has_uppercase else "Password contains uppercase letters."
+    print(uppercase_feedback)
+
+    has_lowercase = re.search(r'[a-z]', password)
+    lowercase_feedback = "Password should contain at least one lowercase letter." if not has_lowercase else "Password contains lowercase letters."
+    print(lowercase_feedback)
+
+    has_number = re.search(r'[0-9]', password)
+    number_feedback = "Password should contain at least one number." if not has_number else "Password contains numbers."
+    print(number_feedback)
+
+    has_special = re.search(r'[!@#$%^&*(),.?":{}|<>]', password)
+    special_feedback = "Password should contain at least one special character." if not has_special else "Password contains special characters."
+    print(special_feedback)
+
+    if has_uppercase and has_lowercase and has_number and has_special and MIN_LENGTH <= length <= MAX_LENGTH:
+        strength = "Password is strong."
+    else:
+        strength = "Password could be stronger."
+    print(strength)
+
+password = input("Enter a password to assess: ")
+assess_password_strength(password)
