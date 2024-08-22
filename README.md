@@ -1,4 +1,61 @@
-# Password Strength Checker
+# Task 1 : Caesar Cipher Encryption/Decryption Tool
+
+This Python script provides a simple Caesar Cipher tool to encrypt and decrypt messages by shifting the alphabet by a specified number of positions. The tool supports both upper and lower case letters and leaves non-alphabetic characters unchanged.
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example](#example)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+- **Encrypt and Decrypt Messages:** The tool can encrypt a message by shifting the letters forward and decrypt it by reversing the shift.
+- **Custom Shift Value:** You can specify the number of positions by which to shift the alphabet (e.g., a shift of 3 turns 'A' into 'D').
+- **Case Sensitivity:** The tool maintains the case of the original message (uppercase and lowercase letters are handled separately).
+- **Handles Non-Alphabetic Characters:** Any characters that are not part of the alphabet (e.g., punctuation, spaces) are left unchanged.
+
+## Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/caesar-cipher-tool.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd caesar-cipher-tool
+   ```
+
+## Usage
+To run the Caesar Cipher tool, simply execute the script:
+
+```bash
+python caesar_cipher.py
+```
+
+You will be prompted to enter a message and a shift value. The tool will then display the encrypted message followed by the decrypted message.
+
+## Example
+Here's an example of how the script works:
+
+```bash
+HI! Caesar Cipher Encr/Decr tool is here
+What's Your Message Sirr Tell me: Hello, World!
+Enter the shift value: 3
+Encrypted Message: Khoor, Zruog!
+Decrypted Message: Hello, World!
+```
+
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Submit a pull request with a clear description of your changes.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Task 3 : Password Complexity Checker
 
 This Python script helps assess the strength of a password by checking the following criteria:
 - Length of the password (between 8 and 20 characters)
@@ -63,10 +120,58 @@ If you'd like to contribute to this project, please fork the repository and subm
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+# Task 4: Simple Keylogger
 
-Feel free to customize the sections as needed, such as replacing `"yourusername"` with your actual GitHub username or adding more detailed instructions.
+This Python script utilizes the `pynput` library to create a simple keylogger that logs all keystrokes to a file named `keylog.txt`. The keylogger runs until the `ESC` key is pressed.
 
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Disclaimer](#disclaimer)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+- Logs every key pressed, including both character keys and special keys.
+- Stores key logs in a text file (`keylog.txt`).
+- Runs until the `ESC` key is pressed to stop the logger.
+
+## Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/keylogger-script.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd keylogger-script
+   ```
+3. **Install the necessary Python package:**
+   ```bash
+   pip install pynput
+   ```
+
+## Usage
+To start the keylogger, simply run the script:
+
+```bash
+python keylogger.py
+```
+
+The script will begin logging all keystrokes to the `keylog.txt` file. The logging will continue until the `ESC` key is pressed, at which point the script will stop.
+
+## Disclaimer
+**Important:** This keylogger is intended for educational purposes only. Unauthorized use of a keylogger to capture keystrokes without explicit consent is illegal and unethical. Always ensure you have permission to log keystrokes on any device.
+
+## Contributing
+Contributions to improve this script are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Submit a pull request with a detailed description of the changes.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+ 
 ## TASK 5 : Network Packet Analyzer
 
 Overview
