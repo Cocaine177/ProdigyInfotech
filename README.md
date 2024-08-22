@@ -55,7 +55,7 @@ Contributions are welcome! To contribute:
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Task 3 : Password Complexity Checker
+# Task 3 : Password Complexity Checker
 
 This Python script helps assess the strength of a password by checking the following criteria:
 - Length of the password (between 8 and 20 characters)
