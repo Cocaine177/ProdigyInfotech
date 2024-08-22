@@ -172,7 +172,7 @@ Contributions to improve this script are welcome! To contribute:
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
  
-## TASK 5 : Network Packet Analyzer
+# TASK 5 : Network Packet Analyzer
 
 Overview
 
